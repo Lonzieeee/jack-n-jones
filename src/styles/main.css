@@ -48,7 +48,7 @@ body {
  
   .header-top .icons,
   .nav-links {
-    display: none;
+    display: none !important;
   }
 
   /* Adjust the layout for mobile */
