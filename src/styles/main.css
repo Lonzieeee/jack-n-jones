@@ -28,17 +28,18 @@ body {
 /* Video Section */
 .video-section{
   width: 100%;
-  height: auto; 
+  height: 50vh; 
 
-  margin-top: -10px; 
-  margin-bottom: -10px;
+  margin-top:0; 
+  margin-bottom:0;
 }
 .video-section iframe {
-  max-width: 100%;
-  height: auto;
-
+  width: 100%;
+  height: 100%;
+margin: 0;
+padding: 0;
   
-  aspect-ratio: 16/9;
+  /* aspect-ratio: 16/9; */
   object-fit: cover;
 }
 
@@ -46,21 +47,24 @@ body {
 @media (max-width: 800px) {
   
  
-  .header-top .icons,
-  .nav-links {
-    display: none !important;
+  .header-top .icons {
+    display: none;
   }
 
   /* Adjust the layout for mobile */
   .header-top {
     display: flex;
     justify-content: space-between;
-    /* gap: 8%; */
+  
     align-items: center;
+  }
+  .nav-links {
+    display: none; /* Hide the nav links on smaller screens */
   }
 
   .header-top .menu-links {
     justify-content: center;
+  
   }
 
   .header-top .brand-name {
@@ -106,16 +110,16 @@ body {
   
   
   .video-section {
-    width: 100%;
+    /* width: 100%; */
     height: 50vh;  /* Adjusted height for mobile */
-    margin-top: -10px;  /* Reduced margin top for mobile */
-    margin-bottom: -10px; /* Reduced margin bottom for mobile */
- 
+    margin-top: 0;  /* Reduced margin top for mobile */
+    margin-bottom: 0; /* Reduced margin bottom for mobile */
+ padding: 0;
   }
 
   .video-section iframe {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     margin: 0;
     object-fit: cover;
   
